@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 20px 0 20px 50px;
+}
+
+.searchItems {
+    margin: 20px;
+}

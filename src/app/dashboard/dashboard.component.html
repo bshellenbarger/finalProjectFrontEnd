@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <div>
+<input class="searchInput" type="text" placeholder="search for your user here">
+<button (click)="searchUser()">Search!</button>
+</div>
+
+Returned Search Items:
+<div class="searchItems" *ngFor="let item of searchItems">
+    {{ item.text }}
+</div>
+</div>

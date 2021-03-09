@@ -1,0 +1,12 @@
+.wrapper {
+    width: 100vw;
+    height: 15vh;
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title, .addVoice {
+    margin: 20px;
+}

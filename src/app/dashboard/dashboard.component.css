@@ -277,7 +277,7 @@ search {
 
   main {
     padding: 4em;
-    background: white url(../images/bg-svg) no-repeat bottom right;
+    /* background: white url(../images/bg-svg) no-repeat bottom right; */
   }
 
   figcaption {

@@ -1,12 +1,308 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat;
 }
 
-input {
-    margin: 20px 0 20px 50px;
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+0,bf7ca3+68,a849a3+100 */
+  background: #e570e7; /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #e570e7 0%,
+    #bf7ca3 68%,
+    #a849a3 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #e570e7 0%,
+    #bf7ca3 68%,
+    #a849a3 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #e570e7 0%,
+    #bf7ca3 68%,
+    #a849a3 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.searchItems {
-    margin: 20px;
+aside {
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em;
+}
+
+img {
+  width: 30px;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+nav {
+  background: white;
+}
+
+.navigation {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  display: block;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: black;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+main {
+  background: white;
+  padding: 1em 1.4em;
+}
+
+h1 {
+  font-size: 1em;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+legend {
+  font-weight: bold;
+}
+
+button {
+  padding: 1px 3px;
+  
+}
+
+search {
+  display: block;
+  color: white;
+  background-color: purple;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 2 em 0;
+  border-radius: 4px;
+}
+/* .who {
+  display:none;
+} */
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+
+  span {
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+    color: #fff;
+  }
+  
+  @keyframes mover {
+    0% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+    50% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 1.0);
+      transform: translateY(30px);
+    }
+    100% {
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+  }
+  
+  span:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  span:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  span:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  span:nth-child(4) {
+    animation-delay: 2s;
+  }
+  
+  span:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+
+  span:nth-child(6) {
+    animation-delay: 3s;
+  }
+  
+  span:nth-child(7) {
+    animation-delay: 3.5s;
+  }
+  
+  span:nth-child(8) {
+    animation-delay: 4s;
+  }
+
+  span:nth-child(9) {
+    animation-delay: 4.5s;
+  }
+
+  span:nth-child(10) {
+    animation-delay: 5s;
+  }
+
+  span:nth-child(11) {
+    animation-delay: 5.5s;
+  }
+
+  span:nth-child(12) {
+    animation-delay: 6s;
+  }
+
+  span:nth-child(13) {
+    animation-delay: 6.5s;
+  }
+
+  span:nth-child(14) {
+    animation-delay: 7s;
+  }
+
+  span:nth-child(15) {
+    animation-delay: 7.5s;
+  }
+
+  span:nth-child(16) {
+    animation-delay: 8s;
+  }
+  
+  span:nth-child(17) {
+    animation-delay: 8.5s;
+  }
+
+  span:nth-child(18) {
+    animation-delay: 9s;
+  }
+
+  span:nth-child(19) {
+    animation-delay: 9.5s;
+  }
+  
+  span:nth-child(20) {
+    animation-delay: 10s;
+  }
+  
+  span:nth-child(21) {
+    animation-delay: 10.5s;
+  }
+
+  img {
+    display: none;
+  }
+
+  aside {
+    background: rgb(235, 183, 235);
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto;
+    padding: 0;
+  }
+
+  main {
+    padding: 4em;
+    background: white url(../images/bg-svg) no-repeat bottom right;
+  }
+
+  figcaption {
+    text-align: center;
+    color: black;
+  }
+  ul {
+    display: block;
+    margin-top: 2em;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+  nav {
+    background: none;
+  }
+  ul li a:hover {
+    background-color: white;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 }
